@@ -2,15 +2,20 @@
 
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/map/map",
+    "pages/center/center",
+    "pages/log/log"
   ],
   "tabBar":{
     "list":[{
       "pagePath": "pages/index/index",
       "text": "首页"
     },{
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "pagePath": "pages/map/map",
+      "text": "地图中心"
+    },{
+      "pagePath": "pages/center/center",
+      "text": "个人中心"
     }]
   },
   "window":{
@@ -22,6 +27,11 @@
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   },
   "debug": true
 }

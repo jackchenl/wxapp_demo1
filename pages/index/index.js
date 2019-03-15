@@ -12,7 +12,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../log/log'
     })
   },
   onLoad: function () {
@@ -53,7 +53,7 @@ Page({
   },
   changeName: function(e){
     this.setData({
-      motto: 'Hello World! My Name is jackchen'
+      motto: `Hello World! My Name is ${this.data.userInfo.nickName}`
     })
   }
 })
